@@ -13,7 +13,7 @@ You need to:
 - Submissions will only be accepted via GitHub or Bitbucket.
 
 Please note:
-- It can be writen in any language you like.
+- It can be written in any language you like.
 - Use any libraries/frameworks/SDKs you choose.
 - Use industry best practices.
 - Use the code to showcase your skill and what you value in a software application.
