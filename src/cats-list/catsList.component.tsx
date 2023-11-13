@@ -10,7 +10,7 @@ import { REACT_APP_API_URL } from "./catsList.utils";
 const CatsList = () => {
   const [users, setUsers] = useState<IUsers[]>([]);
 
-console.log(process.env.REACT_APP_API_URL)
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(

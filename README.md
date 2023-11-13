@@ -35,3 +35,19 @@ Jasper
 Notes
 
 ```
+
+
+Test coverage 
+
+File                                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------------------------|---------|----------|---------|---------|-------------------
+All files                             |   66.66 |      100 |   71.42 |   66.66 |                   
+ cats-list                            |    87.5 |      100 |     100 |    87.5 |                   
+  catsList.component.tsx              |    87.5 |      100 |     100 |    87.5 | 20                
+ cats-list/cats-list-gender           |   83.33 |      100 |   66.66 |   83.33 |                   
+  catsListGender.component.tsx        |   83.33 |      100 |   66.66 |   83.33 | 19  
+
+
+  Story book has been also implemneted for cats list component
+
+  Note: Due to some issues in accessing .env file Utils has been used for API URL 

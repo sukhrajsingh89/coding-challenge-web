@@ -18,9 +18,6 @@ const CatsListGender:FC<Props> =({userObject,gender}) =>{
     return (<div>{users.map((user,idx) => (
         <div key={idx}>{user.name}</div>
       ))}</div>)
-
-
-
 }
 
 export default CatsListGender
