@@ -4,15 +4,15 @@ export const catsListFilter = (list: IUsers[],gender:string): ICats[] => {
   const users: IUsers[] = list?.filter((user) => user.gender === gender);
 
   let catList: ICats[] = [];
-  users?.map((element) => {
-    element?.pets?.map((pet) => {
+  users?.forEach((element) => {
+    element?.pets?.forEach((pet) => {
       if (pet.type === "Cat") {
         catList.push(pet);
       }
     });
   });
 
-  return catList;
+  return catList.sort((a, b) => a.name.localeCompare(b.name));
 };
 
 

@@ -4,6 +4,8 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const MaleList = screen.getByTestId('male-list')
+  expect(MaleList).toBeInTheDocument();
+  const FemaleList = screen.getByTestId('female-list')
+  expect(FemaleList).toBeInTheDocument();
 });

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Spacer } from "./catsList.style";
+import { Spacer ,DivWrapper} from "./catsList.style";
 import { IUsers } from "./types";
 import CatsListGender from './cats-list-gender/catsListGender.component'
 
@@ -25,14 +25,16 @@ console.log(process.env.REACT_APP_API_URL)
 
   return (
     <>
-      <div>Male</div>
+      <DivWrapper>
+      <div data-testid="male-list">Male</div>
       <Spacer />
       <CatsListGender userObject={users} gender={"Male"}/>
        <Spacer />
-      <div>Female</div>
-      <CatsListGender userObject={users} gender={"Female"}/>
+      <div data-testid ="female-list">Female</div>
       <Spacer />
-      
+      <CatsListGender userObject={users} gender={"Female"}/>
+     
+      </DivWrapper>
     </>
   );
 };
