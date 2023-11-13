@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CatsList it should render the component 1`] = `
+<DocumentFragment>
+  <div>
+    Male
+  </div>
+  <div
+    class="sc-bdfCDU dJjNDu"
+  />
+  <div
+    class="sc-bdfCDU dJjNDu"
+  />
+  <div>
+    Female
+  </div>
+  <div
+    class="sc-bdfCDU dJjNDu"
+  />
+</DocumentFragment>
+`;
