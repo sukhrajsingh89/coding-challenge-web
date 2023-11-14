@@ -15,7 +15,7 @@ const CatsListGender:FC<Props> =({userObject,gender}) =>{
    setusers(catsListFilter(userObject,gender))
    },[userObject])
 
-    return (<div>{users.map((user,idx) => (
+    return (<div data-testid="cats-list">{users.map((user,idx) => (
         <div key={idx}>{user.name}</div>
       ))}</div>)
 }

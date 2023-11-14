@@ -13,7 +13,9 @@ exports[`<CatsList it should render the component 1`] = `
     <div
       class="sc-bdfCDU dJjNDu"
     />
-    <div />
+    <div
+      data-testid="cats-list"
+    />
     <div
       class="sc-bdfCDU dJjNDu"
     />
@@ -25,7 +27,9 @@ exports[`<CatsList it should render the component 1`] = `
     <div
       class="sc-bdfCDU dJjNDu"
     />
-    <div />
+    <div
+      data-testid="cats-list"
+    />
   </div>
 </DocumentFragment>
 `;

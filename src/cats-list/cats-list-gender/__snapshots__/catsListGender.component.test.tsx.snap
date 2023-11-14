@@ -2,18 +2,24 @@
 
 exports[`<CatsList it should render the cat list based on gender Female 1`] = `
 <DocumentFragment>
-  <div />
+  <div
+    data-testid="cats-list"
+  />
 </DocumentFragment>
 `;
 
 exports[`<CatsList it should render the cat list based on gender Male 1`] = `
 <DocumentFragment>
-  <div />
+  <div
+    data-testid="cats-list"
+  />
 </DocumentFragment>
 `;
 
 exports[`<CatsList it should render the component 1`] = `
 <DocumentFragment>
-  <div />
+  <div
+    data-testid="cats-list"
+  />
 </DocumentFragment>
 `;

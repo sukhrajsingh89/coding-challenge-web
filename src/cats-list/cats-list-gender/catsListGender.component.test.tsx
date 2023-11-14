@@ -1,5 +1,5 @@
 import React from "react";
-import { render, cleanup } from "@testing-library/react";
+import { render, cleanup,screen } from "@testing-library/react";
 import CatsListGender from "./catsListGender.component";
 
 describe("<CatsList", () => {
@@ -61,6 +61,8 @@ describe("<CatsList", () => {
     };
     const { asFragment } = renderComponent(props);
     expect(asFragment()).toMatchSnapshot();
+    const catsList = screen.getByTestId('cats-list')
+  expect(catsList).toBeInTheDocument();
   });
 
   it("it should render the cat list based on gender Male", () => {
