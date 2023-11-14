@@ -1,18 +1,25 @@
-import React from "react";
-import { render, cleanup,screen } from "@testing-library/react";
+import React,{FC} from "react";
+import { render, cleanup,screen, getByText } from "@testing-library/react";
 import CatsListGender from "./catsListGender.component";
+import { IUsers } from "../types";
+
+interface Props {
+  userObject:IUsers[],
+  gender:any
+}
+
 
 describe("<CatsList", () => {
   afterEach(() => {
     cleanup();
   });
 
-  const renderComponent = (props = {}) => {
-    return render(<CatsListGender userObject={[]} gender={undefined} />);
+  const renderComponent = (props:Props) => {
+    return render(<CatsListGender {...props} />);
   };
 
   it("it should render the component", () => {
-    const props = {
+    const props:Props = {
       userObject: [
         {
           name: "Bob",
@@ -29,7 +36,7 @@ describe("<CatsList", () => {
           age: 18,
           pets: [{ name: "Garfield", type: "Cat" }],
         },
-        { name: "Steve", gender: "Male", age: 45, pets: null },
+        { name: "Steve", gender: "Male", age: 45, pets: [] },
         {
           name: "Fred",
           gender: "Male",
@@ -66,7 +73,7 @@ describe("<CatsList", () => {
   });
 
   it("it should render the cat list based on gender Male", () => {
-    const defaultProps = {
+    const defaultProps:Props = {
       userObject: [
         {
           name: "Bob",
@@ -83,7 +90,7 @@ describe("<CatsList", () => {
           age: 18,
           pets: [{ name: "Garfield", type: "Cat" }],
         },
-        { name: "Steve", gender: "Male", age: 45, pets: null },
+        { name: "Steve", gender: "Male", age: 45, pets: [] },
         {
           name: "Fred",
           gender: "Male",
@@ -116,10 +123,11 @@ describe("<CatsList", () => {
 
     const { asFragment } = renderComponent(defaultProps);
     expect(asFragment()).toMatchSnapshot();
+    
   });
 
   it("it should render the cat list based on gender Female", () => {
-    const defaultProps = {
+    const defaultProps:Props = {
       userObject: [
         {
           name: "Bob",
@@ -136,7 +144,7 @@ describe("<CatsList", () => {
           age: 18,
           pets: [{ name: "Garfield", type: "Cat" }],
         },
-        { name: "Steve", gender: "Male", age: 45, pets: null },
+        { name: "Steve", gender: "Male", age: 45, pets: [] },
         {
           name: "Fred",
           gender: "Male",
@@ -169,5 +177,6 @@ describe("<CatsList", () => {
 
     const { asFragment } = renderComponent(defaultProps);
     expect(asFragment()).toMatchSnapshot();
+    expect(screen.getByText('Garfield')).toBeInTheDocument()
   });
 });

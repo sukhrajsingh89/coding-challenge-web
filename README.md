@@ -39,13 +39,23 @@ Notes
 
 Test coverage 
 
-File                                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
---------------------------------------|---------|----------|---------|---------|-------------------
-All files                             |   66.66 |      100 |   71.42 |   66.66 |                   
- cats-list                            |    87.5 |      100 |     100 |    87.5 |                   
-  catsList.component.tsx              |    87.5 |      100 |     100 |    87.5 | 20                
- cats-list/cats-list-gender           |   83.33 |      100 |   66.66 |   83.33 |                   
-  catsListGender.component.tsx        |   83.33 |      100 |   66.66 |   83.33 | 19  
+------------------------------------------|---------|----------|---------|---------|-------------------
+All files                                  |   67.44 |     37.5 |   86.66 |   65.85 |                   
+ src                                       |    8.33 |        0 |   33.33 |    8.33 |                   
+  App.tsx                                  |     100 |      100 |     100 |     100 |                   
+  index.tsx                                |       0 |      100 |     100 |       0 | 7-19              
+  react-app-env.d.ts                       |       0 |        0 |       0 |       0 |                   
+  reportWebVitals.ts                       |       0 |        0 |       0 |       0 | 3-10              
+ src/components/cats-list                  |   86.95 |       75 |     100 |   85.71 |                   
+  catsList.component.tsx                   |      75 |       50 |     100 |      75 | 19,24-25          
+  catsList.utils.ts                        |     100 |      100 |     100 |     100 | 
+  types.ts                                 |       0 |        0 |       0 |       0 | 
+ src/components/cats-list/cats-list-gender |     100 |      100 |     100 |     100 | 
+  catsListGender.component.tsx             |     100 |      100 |     100 |     100 | 
+ src/components/error                      |     100 |      100 |     100 |     100 | 
+  error.component.tsx                      |     100 |      100 |     100 |     100 | 
+-------------------------------------------|---------|----------|---------|---------|-------------------
+
 
 
   Story book has been also implemneted for cats list component

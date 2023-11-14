@@ -4,7 +4,17 @@ exports[`<CatsList it should render the cat list based on gender Female 1`] = `
 <DocumentFragment>
   <div
     data-testid="cats-list"
-  />
+  >
+    <div>
+      Garfield
+    </div>
+    <div>
+      Simba
+    </div>
+    <div>
+      Tabby
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -12,7 +22,20 @@ exports[`<CatsList it should render the cat list based on gender Male 1`] = `
 <DocumentFragment>
   <div
     data-testid="cats-list"
-  />
+  >
+    <div>
+      Garfield
+    </div>
+    <div>
+      Jim
+    </div>
+    <div>
+      Max
+    </div>
+    <div>
+      Tom
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -20,6 +43,19 @@ exports[`<CatsList it should render the component 1`] = `
 <DocumentFragment>
   <div
     data-testid="cats-list"
-  />
+  >
+    <div>
+      Garfield
+    </div>
+    <div>
+      Jim
+    </div>
+    <div>
+      Max
+    </div>
+    <div>
+      Tom
+    </div>
+  </div>
 </DocumentFragment>
 `;
