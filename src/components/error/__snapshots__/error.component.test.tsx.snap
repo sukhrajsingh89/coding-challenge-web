@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CatsList it should render the component 1`] = `
+<DocumentFragment>
+  <h3
+    data-testid="error"
+  >
+    Page not found
+  </h3>
+</DocumentFragment>
+`;
