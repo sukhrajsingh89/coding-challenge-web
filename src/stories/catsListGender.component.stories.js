@@ -1,5 +1,5 @@
 import React from "react";
-import CatsListGender from "../cats-list/cats-list-gender/catsListGender.component";
+import CatsListGender from "../components/cats-list/cats-list-gender/catsListGender.component";
 
 
 
