@@ -50,4 +50,4 @@ All files                             |   66.66 |      100 |   71.42 |   66.66 |
 
   Story book has been also implemneted for cats list component
 
-  Note: Due to some issues in accessing .env file Utils has been used for API URL 
+ 
